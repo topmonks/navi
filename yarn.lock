@@ -6549,6 +6549,13 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
   integrity sha512-PVadd+WaUDOAciICm/J1waJaSvgq+4rHE/K70j0PFqKhkTBsPv/82UGQJNXAngz1fOQLLxI6z1sEDmJDQhCTAA==
 
+react-navi@^0.14.4:
+  version "0.14.4"
+  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.14.4.tgz#6d622f08009fda5517726541402f3f234083b687"
+  integrity sha512-faMCCEikOUvsJNI9cD7Zqktv7ZOV5MNLcy5lli6WaTqhtUmS22C6X7fivvOWx/FukNLt4bU1R1+ScRVDk5+oBQ==
+  dependencies:
+    "@types/history" "^4.6.2"
+
 react-side-effect@^1.1.0:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.1.5.tgz#f26059e50ed9c626d91d661b9f3c8bb38cd0ff2d"

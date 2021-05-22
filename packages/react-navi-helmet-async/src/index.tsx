@@ -1,7 +1,7 @@
 import { Chunk, HeadChunk, TitleChunk } from 'navi'
 import * as React from 'react'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import { ViewHeadRendererContext } from 'react-navi'
+import { ViewHeadRendererContext } from '@topmonks/react-navi'
 
 interface NaviHelmetProviderProps {
   canUseDOM?: boolean
@@ -24,7 +24,7 @@ function NaviHelmetProvider({
   // react-helmet may thinks it's in a browser due to JSDOM, so we need to
   // manually let it know that we're doing static rendering.
   if (canUseDOM !== undefined) {
-    ;(HelmetProvider as any).canUseDOM = canUseDOM
+    ; (HelmetProvider as any).canUseDOM = canUseDOM
   }
 
   if (!(HelmetProvider as any).canUseDOM) {
@@ -73,8 +73,8 @@ export function renderViewHead(chunks: Chunk[]): React.ReactNode {
         chunk.type === 'title'
           ? createTitleElement(chunk.title)
           : chunk.head.type === React.Fragment || chunk.head.type === 'head'
-          ? chunk.head.props.children
-          : chunk.head,
+            ? chunk.head.props.children
+            : chunk.head,
       ),
     )
   return helmet || null
